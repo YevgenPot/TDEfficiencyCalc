@@ -30,7 +30,9 @@ DMG=1.5,
 Reload=1.25,
 Burst=5,
 Range=13,
-[Stealth Detect],
+Stealth Detect,
+Test1,
+Test2,
 }
 
 up1-4{
@@ -174,7 +176,7 @@ Reload=2.15,
 Range=11,
 }
 
--Operator-
+- Operator -
 
 placement{
 Cost=500,
@@ -581,4 +583,83 @@ deltaCost=105000,
 DMG=160,
 Reload=0.08,
 Range=46,
+}
+
+- Railgunner -
+
+placement{
+Cost=3250,
+DMG=150,
+Reload=5,
+Range=22,
+}
+
+up1-1{
+deltaCost=1050,
+DMG=150,
+Reload=4.25,
+Range=23,
+}
+
+up1-2{
+deltaCost=2500,
+DMG=150,
+Reload=3.5,
+Range=27,
+}
+
+up1-3{
+deltaCost=6500,
+DMG=150,
+Reload=3.25,
+Range=28,
+}
+
+up1-4{
+deltaCost=12000,
+DMG=250,
+Reload=3,
+Range=30,
+}
+
+up1-5{
+deltaCost=26000,
+DMG=350,
+Reload=2,
+Range=37,
+}
+
+up2-1{
+deltaCost=1850,
+DMG=225,
+Reload=5,
+Range=22,
+}
+
+up2-2{
+deltaCost=3200,
+DMG=325,
+Reload=5,
+Range=23,
+}
+
+up2-3{
+deltaCost=8000,
+DMG=625,
+Reload=7,
+Range=31,
+}
+
+up2-4{
+deltaCost=17000,
+DMG=1010,
+Reload=6.5,
+Range=43,
+}
+
+up2-5{
+deltaCost=70000,
+DMG=8010,
+Reload=1,
+Range=63,
 }

@@ -1,6 +1,28 @@
 import os
 import re
 
+'''
+inputModule v1
+
+input portion of the program
+    reads data from file
+
+    code is almost all ai here
+    if it works it works
+    
+    (might not work in scale
+    i am planning on working with nodes as data structs
+    and not dictionaries
+    in the future)
+
+input is the filename string correlating to a file in the dataDir
+
+output is a structured dictionary of dictionaries
+    structure:
+        { tower_name: { block_name: { key: value } } }
+
+'''
+
 def mainInput():
     filename = "entry.txt"
     towers_data = parse_custom_format(filename)
@@ -91,3 +113,53 @@ def parse_custom_format(filename):
 
 if __name__ == "__main__":
     mainInput()
+
+
+''' sample output (outdated, pls fix)
+'Missile Trooper': {'placement': {'Cost': 1250,
+                                   'DMG': 40,
+                                   'Range': 16.0,
+                                   'Reload': 7.5,
+                                   'tags': ['[Splash]']},
+                     'up1-1': {'DMG': 75,
+                               'Range': 16,
+                               'Reload': 7.5,
+                               'deltaCost': 1000},
+                     'up1-2': {'DMG': 75,
+                               'Range': 19,
+                               'Reload': 7.5,
+                               'deltaCost': 350},
+                     'up1-3': {'DMG': 100,
+                               'Range': 23,
+                               'Reload': 6.5,
+                               'deltaCost': 2000},
+                     'up1-4': {'DMG': 160,
+                               'Range': 27,
+                               'Reload': 6.5,
+                               'deltaCost': 3250},
+                     'up1-5': {'DMG': 220,
+                               'Range': 39,
+                               'Reload': 4.5,
+                               'deltaCost': 12500,
+                               'tags': ['[Primary Target]']},
+                     'up2-1': {'DMG': 40,
+                               'Range': 16,
+                               'Reload': 6.5,
+                               'deltaCost': 275},
+                     'up2-2': {'DMG': 40,
+                               'Range': 16,
+                               'Reload': 5.5,
+                               'deltaCost': 300},
+                     'up2-3': {'DMG': 80,
+                               'Range': 16,
+                               'Reload': 7,
+                               'deltaCost': 2800},
+                     'up2-4': {'DMG': 165,
+                               'Range': 19,
+                               'Reload': 7,
+                               'deltaCost': 3850},
+                     'up2-5': {'DMG': 65,
+                               'Range': 19,
+                               'Reload': 0.6,
+                               'deltaCost': 23000}},
+'''

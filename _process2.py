@@ -173,6 +173,9 @@ def insertEfficiency(node):
         #print(node.name, node.upg_data["Cost"], node.upg_data["DMG"], node.upg_data["Burst"] , node.upg_data["Reload"])
     else:
         node.upg_data["EfficiencyCost"] = node.upg_data["Cost"] / ( (node.upg_data["DMG"]) / node.upg_data["Reload"] )
+
+    ##if node.upg_data["EfficiencyCost"] < 0:
+        #print( node.upg_data["Cost"], node.upg_data["DMG"], node.upg_data["Reload"] )
         #print(node.name, node.upg_data["Cost"], node.upg_data["DMG"], node.upg_data["Reload"])
 
 def upgradeLoser(node1, node2, efficiencyList):

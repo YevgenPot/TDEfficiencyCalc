@@ -1,10 +1,12 @@
 Tower Defense Efficiency Calculator
-v0.1
+v0.2
 ----------
 Python script
 takes files from the data directory: dataDir
 uses input module to parse the file: _inputModule.py
-uses process module to read and calculate and output : _process2.py
+uses process module to process data into a composite linked list : _processing.py
+uses calculating module to evaulate a upgrade sequence for each path of a tower: calculate2.py
+
 ------------
 
-executes from _process2.py
+executes from main.py
