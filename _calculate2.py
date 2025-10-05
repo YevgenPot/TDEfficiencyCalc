@@ -1,3 +1,4 @@
+
 import _Node
 import _processing
 
@@ -55,14 +56,14 @@ def mainCalculate(tower):
                 efficientChoiceList[currentList].attach(models[best_index].name, models[best_index].data) # initialize the next best efficient list with the current best
 
     
-    '''
+    
     for i in range(len(choiceNodes)):
         while choiceNodes[i].data["depth"] <=5 :
             models[i] = _Node.Node(choiceNodes[i].next.name, ( createUpgradedTowerData(efficientChoiceList[i].tail.data, choiceNodes[i].next.data ) ) ) 
             insertEfficiency(models[i])
             efficientChoiceList[i].attach(models[i].name, models[i].data)
             choiceNodes[i].next = choiceNodes[i].next.next
-            choiceNodes[i].data["depth"] += 1  '''
+            choiceNodes[i].data["depth"] += 1 
             
     
     

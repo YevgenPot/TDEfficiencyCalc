@@ -39,7 +39,7 @@ class MasterNode:
     def __init__(self, name, data = None):
         self.name = name
         self.data = data
-        self.path = [None]
+        self.path = [None] # intended to be a list of linked lists
 
     def attachPath(self, path):
         if isinstance(path, LinkedDataList):

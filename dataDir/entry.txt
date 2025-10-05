@@ -48,7 +48,7 @@ deltaCost=8750,
 DMG=16.5,
 Reload=0.15,
 Range=18,
-[Set Reload],
+Set Reload,
 }
 
 up2-1{
@@ -662,4 +662,5 @@ deltaCost=70000,
 DMG=8010,
 Reload=1,
 Range=63,
+Set Reload,
 }

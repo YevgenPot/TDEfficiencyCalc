@@ -23,8 +23,7 @@ output is a structured dictionary of dictionaries
 
 '''
 
-def mainInput():
-    filename = "entry.txt"
+def mainInput(filename):
     towers_data = parse_custom_format(filename)
     
     #import pprint

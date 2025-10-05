@@ -126,7 +126,7 @@ def insertDeltaParams(entryData: dict, exitData: dict): ## works directly on the
             delta_value = exitData.get(key, 0) - entryData.get(key, 0)
         exitData[delta_key] = delta_value
         '''
-        if (key == "tags") or ("delta" in key): # ignore tags or delta values
+        if (key == "tags") or ("delta" in key): # ignore tags or delta-values
             continue
         else:
             fallback = {  # set fallback values if a key doesnt exist
